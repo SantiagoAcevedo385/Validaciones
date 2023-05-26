@@ -1,0 +1,99 @@
+.loginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background: url('https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg?w=1380&t=st=1684969522~exp=1684970122~hmac=7e7d7c88d5f6aecb1c4422a528b83ba0593e5d174872d1c534bce6227341998a');
+    background-position: center;
+    background-size: cover;
+}
+
+#loginBurdeos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    background: #DDC3AE;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+.logoImg {
+    width: 5rem;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5rem;
+  }
+#loginBurdeos h1{
+    font-size: 2.5rem;
+    color: #94534b;
+}
+
+#loginBurdeos .inputContainer{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+#loginBurdeos .inputContainer input{
+    width: 100%;
+    padding: .5rem 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 5px;
+    background: transparent;
+}
+
+#loginBurdeos .inputContainer input::placeholder{
+    color: transparent !important;
+}
+
+#loginBurdeos .inputContainer label{
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: #000;
+    cursor: text;
+    /* background-color: #fff; */
+    padding: 0 5px;
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+#loginBurdeos .inputContainer input:focus ~ label{
+    top: 0;
+    font-size: .8rem;
+    color: #94232C;
+}
+
+#loginBurdeos .inputContainer input:focus{
+    border-color: #94232C;
+}
+
+#loginBurdeos .inputContainer input:not(:focus):not(:placeholder-shown) ~ label{
+    top: 0;
+    font-size: .8rem;
+}
+
+#loginBurdeos button{
+    background: transparent;
+    border: 2px solid #94232C;
+    color: #94232C;
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+#loginBurdeos button:hover{
+    background-color: #94232C;
+    color: #fff;
+}
